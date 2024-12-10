@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    background-color: #F5E5D8;
+    font: normal 11pt Figtree; 
+    text-transform: uppercase; 
+}
+
+a {
+    text-decoration: none; /* Remove sublinhado */
+    display: block; /* Permite que o link envolva toda a div */
+    width: 100%;
+  }
+
+div#logo {
+    padding: 35px;
+    text-align: center;
+}
+
+div#glinks {
+    width: 100%;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.ilinks {
+
+    padding: 5px;
+    border-radius: 50px;
+    border: 3px solid black;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 100%;
+    max-width: 100%;
+    gap: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1), transform 0.4s cubic-bezier(0.4, 0, 0.2, 1); /* Suavidade */
+
+}
+
+.ilinks:hover {
+    border-color: #ffcc00;
+    transform: scale(1.02); 
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+
+#whatsapp {
+    border-color: #00AC55;
+    color: #00AC55;
+}
+
+#whatsapp:hover {
+    background-color: #d4f5e1; 
+}
+
+#instagram {
+    border-color: #DD2A7B;
+    color: #DD2A7B;
+    
+}
+
+#instagram:hover {
+    background-color: #fde1e8; 
+}
+
+#facebook {
+    border-color: #1877F2; 
+    color: #1877F2;
+}
+#facebook:hover {
+    background-color: #e1e7fd; 
+}
+
+div#cta {
+    color: #F5E5D8;
+    padding: 2px;
+    margin-bottom: 20px;
+    background-color: #346565;
+    font-size: 14pt;
+    place-items: center;
+    text-align: center;
+    border-radius: 50px;
+    width: 100%;
+}
+
+section {
+    background-color: white;
+    width: 700px;
+    border-radius: 30px;
+    margin: auto;
+    padding: 35px;
+    max-width: 90%;
+
+}
