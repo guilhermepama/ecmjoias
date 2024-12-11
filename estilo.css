@@ -124,5 +124,12 @@ div#cta {
     div#cta {
         font-size: 10pt;
     }
+
+    @media screen and (max-width: 382px) {
+
+        .ilinks {
+            font-size: 8pt;    
+        }
+    
     
 }
