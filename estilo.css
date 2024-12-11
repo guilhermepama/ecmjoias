@@ -1,7 +1,10 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
 body {
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     margin: 0;
     background-color: #F5E5D8;
@@ -30,16 +33,16 @@ div#glinks {
 
 .ilinks {
 
-    padding: 5px;
+
     border-radius: 50px;
     border: 3px solid black;
     height: 60px;
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     width: 100%;
-    max-width: 100%;
     gap: 16px;
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1), transform 0.4s cubic-bezier(0.4, 0, 0.2, 1); /* Suavidade */
 
@@ -82,7 +85,7 @@ div#glinks {
 
 div#cta {
     color: #F5E5D8;
-    padding: 2px;
+    padding: 6px;
     margin-bottom: 20px;
     background-color: #346565;
     font-size: 14pt;
@@ -92,12 +95,29 @@ div#cta {
     width: 100%;
 }
 
-section {
+.section {
     background-color: white;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 700px;
     border-radius: 30px;
-    margin: auto;
     padding: 35px;
-    max-width: 90%;
+    max-width: 70%;
 
+}
+
+@media screen and (max-width: 425px) {
+
+    .section {
+        background-color: transparent;
+        width: 200px;
+    }
+
+    .ilinks {
+        font-size: 6pt;
+    }
+    
 }
