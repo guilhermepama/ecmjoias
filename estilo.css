@@ -18,8 +18,14 @@ a {
     width: 100%;
   }
 
+div#ednome {
+    font-size: 18pt;
+    font-weight: 600;
+    color: #BAA365;
+}  
+
 div#logo {
-    padding: 35px;
+    padding: 0px;
     text-align: center;
 }
 
@@ -32,7 +38,6 @@ div#glinks {
 }
 
 .ilinks {
-
     padding: 16px;
     border-radius: 50px;
     border: 3px solid black;
@@ -124,6 +129,8 @@ div#cta {
     div#cta {
         font-size: 10pt;
     }
+
+}
 
     @media screen and (max-width: 382px) {
 
