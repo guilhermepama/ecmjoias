@@ -1,21 +1,38 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
+:root {
+    --cor-Primaria: #346565;
+    --cor-Secundaria: #BAA365 ;
+    --cor-Terciaria: #F5E5D8 ;
+
+    --font-padrao: 'Figtree', sans-serif ; 
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #F5E5D8;
-    font: normal 11pt Figtree; 
+    height: 98vh;
+    width: 98vw;
+    background-color: var(--cor-Terciaria);
+    font: normal 11pt var(--font-padrao); 
     text-transform: uppercase; 
 }
 
 a {
-    text-decoration: none; /* Remove sublinhado */
-    display: block; /* Permite que o link envolva toda a div */
+    text-decoration: none;
+    display: block; 
     width: 100%;
+  }
+
+  img {
+
   }
 
 div#ednome {
@@ -23,12 +40,9 @@ div#ednome {
     font-weight: 600;
     color: #BAA365;
     text-align: center;
+    margin: 20px;
 }  
 
-div#logo {
-    padding: 0px;
-    text-align: center;
-}
 
 div#glinks {
     width: 100%;
@@ -89,27 +103,24 @@ div#glinks {
 
 div#cta {
     color: #F5E5D8;
-    padding: 6px;
     margin-bottom: 20px;
     background-color: #346565;
-    font-size: 14pt;
-    place-items: center;
+    font-size: 1em;
     text-align: center;
     border-radius: 50px;
     width: 100%;
+    padding: 15px 0 15px 0;
 }
 
 .section {
     background-color: white;
-    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 700px;
+
     border-radius: 30px;
-    padding: 35px;
-    max-width: 70%;
+    padding: 50px;
 
 }
 
